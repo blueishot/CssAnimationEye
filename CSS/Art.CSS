@@ -1,0 +1,80 @@
+#console {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.eye {
+    width: 100px;
+    height: 100px;
+    border: black solid 2px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.iris {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: black solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    animation: eyeColor 10s infinite linear;
+}
+
+.blackPart {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border: black solid 2px;
+    border-radius: 100px;
+}
+
+@keyframes eyeColor {
+    0% {
+        background-color: blue;
+    }
+
+    30% {
+        background-color: red;
+        transform: translateX(10px);
+    }
+
+    31% {
+        background-color: red;
+        transform: translateX(2px);
+    }
+
+    32% {
+        background-color: orangered;
+        transform: translateX(5px);
+    }
+
+    33% {
+        background-color: orangered;
+        transform: translateX(1px);
+    }
+
+    54% {
+        background-color: #00300f;
+        transform: translateY(0.1px);
+        
+    }
+
+    55% {
+        background-color: #00300f;
+        transform: translateX(0px);
+    }
+
+    100% {
+        background-color: blue;
+        
+    }
+
+}
